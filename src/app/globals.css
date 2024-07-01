@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-weight: 400;
 }
 
-:root{
+:root {
   --white: #ffffff;
   --text: #B3B3B3;
   --background: #191919;
@@ -16,16 +16,11 @@
   --primary-container: #22251b;
 }
 
-body{
+body {
+  color: var(--white);
   background-color: var(--background);
 }
 
-a{
+a {
   display: block;
-}
-
-.container{
-  margin-inline: auto;
-  padding-inline: 12px;
-  max-width: calc(100% - 150px);
 }

@@ -14,6 +14,15 @@ module.exports = {
       'primary': '#caff33',
       'primary-container': '#22251b',
     },
+    container: {
+      center: true,
+      padding: '12px',
+      screens: {
+        'md': '100%',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
+    }
   },
   plugins: [],
 };
