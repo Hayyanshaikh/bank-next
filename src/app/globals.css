@@ -21,6 +21,31 @@ body {
   background-color: var(--background);
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
+
 a {
   display: block;
+}
+
+section{
+  padding-block: 60px;
+}
+
+/* hero */
+.abstract_design{
+  top: 0;
+  left: 0;
+  user-select: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero_img{
+  flex: 1;
+}
+
+.hero_content {
+    flex: 1;
 }

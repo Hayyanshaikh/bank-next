@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       'white': '#ffffff',
       'background': '#191919',
+      'text': '#B3B3B3',
       'light-background': '#262626',
       'lighter-background': '#1c1c1c',
       'primary': '#caff33',
@@ -19,7 +20,7 @@ module.exports = {
       padding: '12px',
       screens: {
         'md': '100%',
-        'lg': '1024px',
+        'lg': '992',
         'xl': '1280px',
       },
     }

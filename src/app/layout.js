@@ -1,6 +1,6 @@
 import "./globals.css";
 import localFont from 'next/font/local'
-import Navbar from './components/Navbar.js';
+import Navbar from './components/ui/Navbar.js';
 
 const lexend = localFont({
   src: [
@@ -62,7 +62,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={lexend.className}>
         <Navbar/>
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
