@@ -20,13 +20,13 @@ const Hero = () => {
               <Image
                 src={Verified}
                 alt="Verified Icon"
-                height={20}
-                width={20}
+                height="20px"
+                width="20px"
               />
               <span className="sm:text-[14px] text-[12px] text-white font-light">No LLC Required, No Credit Check.</span>
             </div>
             <h1 className="sm:text-[38px] mb-[10px] text-[28px]">Welcome to YourBank Empowering Your <span className="text-primary">Financial Journey</span></h1>
-            <p className="text-text sm:text-[16px] text-[14px] font-light">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+            <p className="text-color sm:text-[16px] text-[14px] font-light">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers needs.</p>
             <Button
               text="Open Account"
               className="mt-[40px]"

@@ -4,6 +4,7 @@
 
 * {
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 :root {
@@ -21,7 +22,12 @@ body {
   background-color: var(--background);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 
@@ -29,12 +35,12 @@ a {
   display: block;
 }
 
-section{
+section {
   padding-block: 60px;
 }
 
 /* hero */
-.abstract_design{
+.abstract_design {
   top: 0;
   left: 0;
   user-select: none;
@@ -42,10 +48,48 @@ section{
   z-index: -1;
 }
 
-.hero_img{
+.hero_img {
   flex: 1;
 }
 
 .hero_content {
-    flex: 1;
+  flex: 1;
+}
+
+.our_products_head_buttons button:nth-child(2) {
+  background-color: transparent !important;
+  color: var(--white) !important;
+}
+
+/* our products */
+.product_card {
+  position: relative;
+}
+
+.product_card:not(:last-child):before {
+  content: '';
+  width: 1px;
+  right: -40.5px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--light-background);
+}
+
+/* use_case_cards */
+.use_case_cards{
+  background-size: 224px 224px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-image: url("./assets/images/common/abstract_design_2.svg");
+}
+
+@media (max-width: 992px) {
+
+  .product_card:not(:last-child):before {
+    width: 100%;
+    right: 0;
+    bottom: -40.5px;
+    height: 1px;
+  }
+
 }
