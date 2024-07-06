@@ -1,6 +1,11 @@
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import "./globals.css";
 import localFont from 'next/font/local'
 import Navbar from './components/ui/Navbar.js';
+import Footer from './components/ui/Footer.js';
 
 const lexend = localFont({
   src: [
@@ -65,6 +70,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

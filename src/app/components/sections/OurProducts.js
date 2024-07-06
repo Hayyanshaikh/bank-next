@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import Button from '../utils/Button.js'
+import Tabs from '../utils/Tabs.js'
+import Button from '../utils/Button.js';
 import Heading from '../utils/Heading.js';
 import ProductCard from '../ui/ProductCard.js'
 import productIcon1 from '../../assets/images/icons/product_icon_1.svg';
@@ -26,16 +27,14 @@ const OurProducts = () => {
 						highlight="Products"
 						text="Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations"
 					/>
-					<div className="our_products_head_buttons bg-lighter-background flex p-[12px] border border-light-background rounded-full flex-auto flex-shrink-0">
-						<Button
-							text="For Individuals"
-							small="px-[18px] py-[10px]"
-						/>
-						<Button
-							text="For Individuals"
-							small="px-[18px] py-[10px]"
-						/>
-					</div>
+					<Tabs
+						tabs={
+							[
+						    { text: 'For Individuals', small: 'px-[18px] py-[10px]' },
+						    { text: 'For Teams', small: 'px-[18px] py-[10px]' },
+						  ]
+						}
+					/>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-[80px]">
 					{products.map((product, index) => (
