@@ -12,7 +12,7 @@ const TopSection = ({heading, text, imgSrc}) => {
 							<p className="text-[14px] lg:text-[16px] font-light text-color">{text}</p>
 						</div>
 					</div>
-					<figure className="top_section_image flex-grow-auto w-full lg:w-1/2">
+					<figure className="top_section_image flex-grow-auto w-full lg:w-1/2 rounded-[16px] overflow-hidden">
 						<Image
 							className="object-cover w-full"
 							src={imgSrc}

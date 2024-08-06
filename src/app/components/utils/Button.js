@@ -6,8 +6,8 @@ const Button = ({ text, small, className, rootProps, light }) => {
   const buttonStyle = light ? "bg-lighter-background text-white border border-light-background" : "bg-primary text-background";
   
   return (
-    <button {...rootProps} className={` ${className ? className : ""} ${buttonStyle} ${buttonSize} rounded-full text-[14px]`}>
-      <span>{text}</span>
+    <button {...rootProps} className={`${className ? className : ""} ${buttonStyle} ${buttonSize} rounded-full text-[14px]`}>
+      <span className="font-medium">{text}</span>
     </button>
   );
 };

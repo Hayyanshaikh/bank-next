@@ -4,6 +4,7 @@ import Frequently from '../../components/sections/Frequently.js';
 import Subscribe from '../../components/sections/Subscribe.js';
 import OurValue from '../../components/sections/OurValue.js';
 import OurBenefits from '../../components/sections/OurBenefits.js'
+import Jobs from '../../components/sections/Jobs.js';
 import TopImage from '../../assets/images/backgrounds/top_1.webp';
 
 const Careers = () => {
@@ -17,6 +18,7 @@ const Careers = () => {
       />
       <OurValue />
       <OurBenefits />
+      <Jobs />
       <Frequently />
       <Subscribe />
     </>
